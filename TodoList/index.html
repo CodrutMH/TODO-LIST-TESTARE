@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6447c7e566.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="">
+    <main class="main-content">
+      <h1>TODO LIST</h1>
+      <div class="header">
+        <div class="input-icon-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search note..." />
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">ALL</button>
+        </div>
+        <button class="theme">
+          <i class="fa-solid fa-moon" id="moon-icon"></i>
+          <i class="fa-solid fa-lightbulb hidden" id="bulb-icon"></i>
+        </button>
+      </div>
+      <div class="content" id="notesContent">
+        <div class="note-content">
+          <div class="note">
+            <input type="checkbox" id="checkbox" />
+            <span class="note-text">Read recommended book</span>
+          </div>
+          <div class="note-btn">
+            <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash" id="deleteBtn"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="add-note-btn" id="add-note-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </main>
+    <div class="dropdown-menu hidden">
+      <button class="all-btn">All</button>
+      <button class="completed-btn">Complete</button>
+      <button class="incompleted-btn">Incomplete</button>
+    </div>
+
+    <!-- add note modal -->
+    <div class="add-note hidden" id="addNote-Modal">
+      <h2>NEW NOTE</h2>
+      <input type="text" id="input-text" placeholder="New note..." />
+      <div class="buttons">
+        <button id="close-modal-btn">CANCEL</button>
+        <button id="applyBtn">APPLY</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
