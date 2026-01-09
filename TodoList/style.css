@@ -330,3 +330,11 @@ input,
 .note-text.editing {
   outline: 1px solid #6c63ff;
 }
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  .add-note {
+    width: 90%;
+  }
+}
